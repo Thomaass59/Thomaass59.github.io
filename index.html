@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!--
+ Copyright 2023 Thomas 16h30 - Minuit c'te site !
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Portfolio</title>
+</head>
+
+<a id="Accueil"></a>
+<a id="Presentation"></a>
+<a id="Competence"></a>
+<a id="Realisation"></a>
+<a id="Contact"></a>
+
+<body>
+  <div class="Footer">
+    <a href="https://www.linkedin.com/in/thomas-vieira-141b51267/" target="_blank"><i
+        class="fa-brands fa-linkedin fa-2xl"></i></a>
+    <a href="mailto:thomas59.gameur@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open-text fa-2xl"></i></a>
+    <a href="https://github.com/Thomaass59" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+  </div>
+
+  <nav class="NavigationLayer" id="burger">
+
+
+    <div class="TitreNav">Thomas.<div id="barre">|</div>
+    </div>
+    <li class="li"><a href="#Accueil" id="callOne">Accueil</a></li>
+    <li class="li"><a href="#Presentation" id="callTwo">Présentation</a></li>
+    <li class="li"><a href="#Competence" id="callThree">Compétence</a></li>
+    <li class="li"><a href="#Realisation" id="callFour">Réalisation</a></li>
+    <li class="li"><a href="#Contact" id="callFive">Contact</a></li>
+  </nav>
+
+  <main class="WrapperContainer" id="siteContainer">
+
+    <!------------- Accueil -------------------->
+
+    <section class="Accueil BaseLayers" id="PageOne">
+
+      <div id="header">
+        <h1>Développeur WEB Full Stack</h1>
+        <h1>WEB Mobile Full Stack</h1>
+      </div>
+    </section>
+
+    <!------------- Présentation -------------------->
+
+    <section class="Presentation BaseLayers" id="PageTwo">
+
+      <div class="profil">
+        <div id="photo"></div>
+        <div id="text">
+          <h3>Bonjour</h3>
+          <p>Je suis Thomas, Développeur WEB Full Stack.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!------------- Compétance -------------------->
+
+    <section class="Competence BaseLayers" id="PageThree">
+      <div id="text2">
+        <h3>Mes compétence</h3>
+        <p>Je suis en mesure d'intervenir sur défférentes programmation</p>
+        <p>Plus précisement :</p>
+        <p>> Concevoir, manipuler et interroger des bases de données</p>
+        <img width="50" height="50" src="assets/ico/mysql.png" alt="MySQL">
+        <p>> Concevoir le back-end et les API sous forme de webservice</p>
+        <img width="50" height="50" src="assets/ico/php.png" alt="PHP">
+        <p>> Concevoir le front-end et optimiser les assets</p>
+        <img width="50" height="50" src="assets/ico/html5.png" alt="HTML5">
+        <img width="50" height="50" src="assets/ico/angular.png" alt="Angular">
+        <img width="50" height="50" src="assets/ico/js.png" alt="JavaScript">
+        <p>> Configurer l'infrastructure matérielle et les serveurs</p>
+        <img width="50" height="50" src="assets/ico/docker.png" alt="Docker">
+        <img width="50" height="50" src="assets/ico/git.png" alt="GIT">
+        <img width="50" height="50" src="assets/ico/debian.png" alt="Debian">
+        <img width="50" height="50" src="assets/ico/figma.png" alt="Figma">
+        <img width="50" height="50" src="assets/ico/windows.png" alt="Windows">
+      </div>
+    </section>
+
+    <!------------- Réalisation -------------------->
+
+    <section class="Realisation BaseLayers" id="PageFour">
+      <div id="header2">
+        <h1>Mes Réalisation</h1>
+      </div>
+      <div class="site1">
+        <div id="real1">
+          <a href="http://pandame.localhost/" target="_blank"><img src="assets/img/site1.png" alt="Site1"></a>
+          <div id="real3">
+            <h2>Pandame.localhost</h2>
+            <p>Ce site & était conçu en :</p>
+            <img width="50" height="50" src="assets/ico/mysql.png" alt="MySQL">
+            <img width="50" height="50" src="assets/ico/php.png" alt="PHP">
+            <img width="50" height="50" src="assets/ico/html5.png" alt="HTML5">
+          </div>
+        </div>
+      </div>
+      <div class="site2">
+        <div id="real2">
+          <a href="http://thomas59.rf.gd/" target="_blank"><img src="assets/img/site2.png" alt="Ste2"></a>
+          <div id="real4">
+            <h2>Thomas59.rf.gd</h2>
+            <p>Ce site & était conçu avec :</p>
+            <img width="50" height="50" src="assets/ico/wordpress.png" alt="WordPress">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------- Contact -------------------->
+
+    <section class="Contact BaseLayers" id="PageFive">
+      <div class="container">
+        <h1>Formulaire de contact</h1><br>
+
+        <form id="contact" method="post" action="#">
+          <label for="fname">Prénom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre prénom">
+
+          <label for="sujet">Sujet</label>
+          <input type="text" id="objet" name="objet" placeholder="L'objet de votre message">
+
+          <label for="emailAddress">Email</label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+          <label for="subject">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+
+          <input type="submit" value="Envoyer" value="Envoyer le formulaire !">
+        </form>
+      </div>
+
+      </div>
+    </section>
+
+</body>
+
+</html>
