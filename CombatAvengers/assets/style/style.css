@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.selectChampion{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.combatValid {
+	height: 100%;
+	width: 100%;
+	display: none;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.selectGauche{
+    height: 75%;
+    width: 40%;
+    display: flex;
+	flex-direction: column;
+}
+
+.selectDroite{
+    height: 75%;
+    width: 40%;
+    display: none;
+    flex-direction: column;
+}
+
+.gaucheBluebeetle, .droiteBluebeetle,
+.gaucheAntman, .droiteAntman,
+.gauchePanther, .droitePanther,
+.gaucheIronman, .droiteIronman {
+    height: 100%;
+    width: 25%;
+    background-position: top;
+    background-repeat: no-repeat;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.gaucheBluebeetle :hover, .droiteBluebeetle :hover,
+.gaucheAntman :hover, .droiteAntman :hover,
+.gauchePanther :hover, .droitePanther :hover,
+.gaucheIronman :hover,.droiteIronman :hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.combatChampion{
+    display: none;
+    height: 100%;
+    width: 100%;
+	justify-content: center;
+    flex-wrap: wrap;
+	align-items: center;
+}
+
+.combatGauche{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+    height: 60%;
+    width: 25%;
+}
+
+.combatDroite{
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	justify-content: center;
+    height: 60%;
+    width: 25%;
+}
+
+.imgCombatGauche{
+    height: 100%;
+    width: 100%;
+}
+
+.combatValidTwo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.combatValidGauche,
+.combatValidDroite {
+    flex-direction: row;
+	height: 60%;
+	width: 80%;
+}
+
+.imgCombatDroite{
+    height: 100%;
+    width: 100%;
+}
+
+.characterNameOne,
+.characterNameTwo {
+	box-shadow: 3px 4px 0px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:18px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+.btnAttaqueDroite,
+.btnAttaqueGauche {
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+.btnAttaqueDroite:hover,
+.btnAttaqueGauche:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+.btnAttaqueDroite:active,
+.btnAttaqueGauche:active {
+	position:relative;
+	top:1px;
+}
+
+
+.btnCapaDroite,
+.btnCapaGauche {
+	box-shadow: 3px 4px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:18px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	/* color:#333333; */
+	color: white;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+.btnCapaDroite:hover,
+.btnCapaGauche:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+
+.btnCapaDroite:active,
+.btnCapaGauche:active {
+	position:relative;
+	top:1px;
+}
+
+.btnCapaDroite:disabled,
+.btnCapaGauche:disabled,
+.btnAttaqueDroite:disabled,
+.btnAttaqueGauche:disabled {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:18px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.btnCombatValid {
+    box-shadow: 3px 4px 0px 0px #3dc21b;
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:18px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+}
+
+.btnCombatValid:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color:#5cbf2a;
+}
+
+.btnCombatValid:active {
+    position:relative;
+    top:1px;
+}
+
+.btnRefresh {
+	box-shadow: 3px 4px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:18px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.btnRefresh:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.btnRefresh:active {
+	position:relative;
+	top:1px;
+}
+
+.nameOne,
+.nameTwo {
+	display: flex;
+}
+
+.combatValidOne {
+	display: flex;
+	width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnValide {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.combatValideOne {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.playerNameOne,
+.playerNameTwo {
+	display: flex;
+	color: white;
+	flex-wrap: wrap;
+}
+
+.imgVersus {
+	display: flex;
+}
+
+#healthCSS {
+	background-color: burlywood;
+	border-radius: 18px;
+	color: white;
+}

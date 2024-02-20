@@ -1,0 +1,1078 @@
+/* Tablette */
+/* @import url("tablet.css"); */
+
+/* Ordinateur */
+/* @import url("computer.css");  */
+
+/* Téléphone */
+/* @import url("mobil.css"); */
+.navMenu {
+    cursor: pointer;
+}
+
+/* Font */
+@font-face {
+    font-family: phasmo;
+    src: url('../font/phasmophobia/phasmo.ttf');
+}
+@font-face {
+    font-family: roboto;
+    src: url('../font/roboto/Roboto-Regular.ttf')
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgba(0, 0, 0, 0.912); */
+    background-color: #030a0a;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navBar {
+    display: flex;
+    background-color: rgb(50, 47, 47);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-family: phasmo;
+}
+
+a:hover,
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btnHome, .btnGhost, .btnObject, .btnMap, .btnEvidence {
+    font-family: Arial, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #737373;
+    padding: 10px 30px;
+    border: solid #757575 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 17px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+.btnHome:hover, .btnGhost:hover, .btnObject:hover, .btnMap:hover, .btnEvidence:hover {
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #737373;
+    border: solid 2px #737373;
+    }
+
+.sectionHome {
+    flex-direction: column;
+}
+
+.sectionObject,
+.sectionMap,
+.sectionGhost,
+.sectionEvidence,
+.navBarResp {
+    display: none;
+}
+
+.titleSection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    font-family: phasmo;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.titleHome {
+    margin-top: 10%;
+    display: flex;
+    font-family: phasmo;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.descriptionHome {
+    margin-top: 3%;
+    font-family: roboto sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ghost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divDeogen, .divHantu, .divNightmare, .divBanshee, .divDemon, .divDjinn,.divSpirit, .divPhantom, .divGoryo, .divTwin, .divMimic, .divMoroi, .divMyling, .divShadow, .divOni, .divOnryo, .divPoltergeist, .divRaiju, .divRevenant, .divWraith, .divThaye, .divYokai, .divYurei, .divObake {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnHantu {
+    background-image: url('../image/ghost/hantu.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnDeo {
+    background-image: url('../image/ghost/deogen.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnMare {
+    background-image: url('../image/ghost/mare.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnBanshee {
+    background-image: url('../image/ghost/banshee.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnDemon {
+    background-image: url('../image/ghost/demon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnDjinn {
+    background-image: url('../image/ghost/djinn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnSpirit {
+    background-image: url('../image/ghost/spirit.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnPhantom {
+    background-image: url('../image/ghost/phantom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnGoryo {
+    background-image: url('../image/ghost/goryo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnTwin {
+    background-image: url('../image/ghost/twin.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnMimic {
+    background-image: url('../image/ghost/mimic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnMoroi {
+    background-image: url('../image/ghost/moroi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnMyling {
+    background-image: url('../image/ghost/myling.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnShadow {
+    background-image: url('../image/ghost/shade.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnOni {
+    background-image: url('../image/ghost/oni.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnOnryo {
+    background-image: url('../image/ghost/onryo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnPolter {
+    background-image: url('../image/ghost/polter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnRaiju {
+    background-image: url('../image/ghost/raiju.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnRevenant {
+    background-image: url('../image/ghost/revenant.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnWraith {
+    background-image: url('../image/ghost/wraith.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnThaye {
+    background-image: url('../image/ghost/thaye.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnYokai {
+    background-image: url('../image/ghost/yokai.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnYurei {
+    background-image: url('../image/ghost/yurei.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnObake {
+    background-image: url('../image/ghost/obake.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #3a3a3a;
+    padding: 5px;
+}
+
+table th {
+    font-family: roboto, sans-serif;
+    border: 2px solid #3a3a3a;
+    padding: 5px;
+    background: #262626;
+    color: #ffffff;
+}
+
+table td {
+    font-family: roboto, sans-serif;
+    border: 2px solid #3a3a3a;
+    text-align: center;
+    padding: 5px;
+    background: #000000;
+    color: #ffffff;
+}
+
+table td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+table td div img {
+    margin-right: 5px; /* Ajoutez un espace à droite de l'image si nécessaire */
+}
+
+
+.emf {
+   background-image: url('../image/evidence/emf.png');
+   width: 24px;
+   height: 24px;
+}
+.orb {
+    background-image: url('../image/evidence/orb.png');
+    width: 24px;
+    height: 24px;
+}
+.spirit {
+    background-image: url('../image/evidence/spiritbox.png');
+    width: 24px;
+    height: 24px;
+}
+.temp {
+    background-image: url('../image/evidence/temp.png');
+    width: 24px;
+    height: 24px;
+}
+.empreint {
+    background-image: url('../image/evidence/empreint.png');
+    width: 24px;
+    height: 24px;
+}
+.ecriture {
+    background-image: url('../image/evidence/ecriture.png');
+    width: 24px;
+    height: 24px;
+}
+.dots {
+    background-image: url('../image/evidence/dots.png');
+    width: 24px;
+    height: 24px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 90%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.hero {
+    background-image: url(../image/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin: -15px 565px; */
+    margin: 12px auto;
+    /* padding: 188px; */
+    padding: 21px;
+    border: 6px solid #888;
+    /* width: 365px; */
+    width: 1015px;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closeDeo,.closeHantu,.closeMare,.closeBanshee,.closeDemon,.closeDjinn,.closeSpirit,.close4,.closeGoryo,.closeTwin,.closeMimic,.closeMoroi,.closeMyling,.closeShadow,.closeOni,.closeOnryo,.closePoltergeist,.closeRaiju,.closeRevenant,.closeWraith,.closeThaye,.closeYokai,.closeYurei, .closeObake, .closeTanglewood, .closeRidgeview, .closeWillow, .closeEdgefield, .closeBleasdale, .closeCamp, .closeGrafton, .closeMaple, .closePrison, .closeBrownstone, .closeSunny, .closeSinge, .closeMusic, .closeMiroir, .closeOuija, .closeCircle, .closeTarot, .closeVoodoo, .closeOs, .closeLieu, .closeActive, .closeMental, .closeCapSono, .closeComputer, .closeObjectifs {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeDeo:hover,.closeDeo:focus,.closeHantu:hover,.closeHantu:focus,.closeMare:hover,.closeMare:focus,.closeBanshee:hover, .closeBanshee:focus,.closeDemon:hover, .closeDemon:focus,.closeDjinn:hover, .closeDjinn:focus,
+.closeSpirit:hover, .closeSpirit:focus,.close4:hover, .close4:focus,
+.closeGoryo:hover, .closeGoryo:focus,
+.closeTwin:hover, .closeTwin:focus,.closeMimic:hover, .closeMimic:focus,.closeMoroi:hover, .closeMoroi:focus,.closeMyling:hover, .closeMyling:focus,.closeShadow:hover, .closeShadow:focus,.closeOni:hover, .closeOni:focus,.closeOnryo:hover, .closeOnryo:focus,.closePoltergeist:hover, .closePoltergeist:focus,.closeRaiju:hover, .closeRaiju:focus,.closeRevenant:hover, .closeRevenant:focus,.closeWraith:hover, .closeWraith:focus,.closeThaye:hover, .closeThaye:focus,.closeYokai:hover, .closeYokai:focus,.closeYurei:hover, .closeYurei:focus, .closeObake:hover, .closeObake:focus, .closeTanglewood:hover, .closeTanglewood:focus, .closeRidgeview:hover, .closeRidgeview:focus, .closeWillow:hover, .closeWillow:focus, .closeEdgefield:hover, .closeEdgefield:focus, .closeBleasdale:hover, .closeBleasdale:focus, .closeCamp:hover, .closeCamp:focus, .closeGrafton:hover, .closeGrafton:focus,.closeMaple:hover, .closeMaple:focus, .closePrison:hover, .closePrison:focus, .closeSunny:hover, .closeSunny:focus, .closeBrownstone:hover, .closeBrownstone:focus,.closeSinge:focus,.closeSinge:hover, .closeMusic:focus,.closeMusic:hover, .closeMiroir:focus, .closeMiroir:hover, .closeOuija:focus, .closeOuija:hover, .closeCircle:focus, .closeCircle:hover, .closeTarot:focus, .closeTarot:hover, .closeVoodoo:focus, .closeVoodoo:hover, .closeOs:focus, .closeOs:hover, .closeLieu:focus, .closeLieu:hover, .closeActive:focus, .closeActive:hover, .closeMental:focus, .closeMental:hover, .closeCapSono:focus, .closeCapSono:hover, .closeComputer:focus, .closeComputer:hover,  .closeObjectifs:focus, .closeObjectifs:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+    font-family: phasmo;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.modal-text {
+    background-color: #00000060;
+    padding: 0px 0px;
+    margin: 124px auto;
+    /* width: 301px; */
+    width: 971px;
+    color: white;
+}
+
+.modal-h3 {
+    text-decoration: underline red;
+    line-height: 32px;
+}
+
+hr {
+  border: none;
+  border-top: 3px double red;
+  color: red;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: #fff;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.textPhantom {
+    color: black;
+    font-family: roboto, sans-serif;
+    background-color: white;
+    transform: translateY(8px);
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBriquet, .modalFlashlight, .modalCandle, .modalPhoto, .modalIncense, .modalTripod,.modalMotionsensor, .modalSoundsensor, .modalHeadgear, .modalMedication, .modalCamera, .modalSalt,.modalDots,.modalEmf,.modalUv,.modalCrucifix, .modalSpiritbox, .modalThermometer,.modalWritingbook,.modalMicrophone{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalEquipment {
+    width: 500px;
+    height: 600px;
+    border: solid 2px black;
+    text-align: center;
+    margin: 5px;
+}
+
+.navBarEquipment{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tierFlashLightOne, .tierFlashLightTwo, .tierFlashLightThree,
+.tierIgniterOne, .tierIgniterTwo, .tierIgniterThree,
+.tierCandleOne, .tierCandleTwo, .tierCandleThree,
+.tierPhotoOne, .tierPhotoTwo, .tierPhotoThree,
+.tierIncenseOne, .tierIncenseTwo, .tierIncenseThree,
+.tierTripodOne, .tierTripodTwo, .tierTripodThree,
+.tierMotionsensorOne, .tierMotionsensorTwo, .tierMotionsensorThree,
+.tierSoundsensorOne, .tierSoundsensorTwo, .tierSoundsensorThree,
+.tierHeadgearOne, .tierHeadgearTwo, .tierHeadgearThree,
+.tierMedicationOne, .tierMedicationTwo, .tierMedicationThree,
+.tierCameraOne, .tierCameraTwo, .tierCameraThree,
+.tierSaltOne, .tierSaltTwo, .tierSaltThree,
+.tierDotsOne, .tierDotsTwo, .tierDotsThree,
+.tierEmfOne, .tierEmfTwo, .tierEmfThree,
+.tierUvOne, .tierUvTwo, .tierUvThree,
+.tierCrucifixOne, .tierCrucifixTwo, .tierCrucifixThree,
+.tierSpiritboxOne, .tierSpiritboxTwo, .tierSpiritboxThree,
+.tierThermometerOne, .tierThermometerTwo, .tierThermometerThree,
+.tierWritingbookOne, .tierWritingbookTwo, .tierWritingbookThree,
+.tierMicrophoneOne, .tierMicrophoneTwo, .tierMicrophoneThree{
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.flashTierTwo, .flashTierThree, .flashTierThreeThree, .flashTierTwoTwo,
+.igniterTierTwo, .igniterTierThree, .igniterTierThreeThree, .igniterTierTwoTwo,
+.candleTierTwo, .candleTierThree, .candleTierThreeThree, .candleTierTwoTwo,
+.photoTierTwo, .photoTierThree, .photoTierThreeThree, .photoTierTwoTwo,
+.incenseTierTwo, .incenseTierThree, .incenseTierThreeThree, .incenseTierTwoTwo, .tripodTierTwo, .tripodTierThree, .tripodTierThreeThree, .tripodTierTwoTwo, .motionsensorTierTwo, .motionsensorTierThree, .motionsensorTierThreeThree, .motionsensorTierTwoTwo, .headgearTierTwo, .headgearTierThree, .headgearTierThreeThree, .headgearTierTwoTwo,
+.medicationTierTwo, .medicationTierThree, .medicationTierThreeThree, .medicationTierTwoTwo,.cameraTierTwo, .cameraTierThree, .cameraTierThreeThree, .cameraTierTwoTwo,.saltTierTwo, .saltTierThree, .saltTierThreeThree, .saltTierTwoTwo, .dotsTierTwo, .dotsTierThree, .dotsTierThreeThree, .dotsTierTwoTwo, .emfTierTwo, .emfTierThree, .emfTierThreeThree, .emfTierTwoTwo, .uvTierTwo, .uvTierThree, .uvTierThreeThree, .uvTierTwoTwo, .crucifixTierTwo, .crucifixTierThree, .crucifixTierThreeThree, .crucifixTierTwoTwo, .spiritboxTierTwo, .spiritboxTierThree, .spiritboxTierThreeThree, .spiritboxTierTwoTwo, .thermometerTierTwo, .thermometerTierThree, .thermometerTierThreeThree, .thermometerTierTwoTwo, .writingbookTierTwo, .writingbookTierThree, .writingbookTierThreeThree, .writingbookTierTwoTwo, .microphoneTierTwo, .microphoneTierThree, .microphoneTierThreeThree, .microphoneTierTwoTwo {
+    display: none;
+}
+
+.hover:hover, .flashLightOne:hover, .flashLightTwo:hover, .flashLightThree:hover,
+.igniterOne:hover, .igniterTwo:hover, .igniterThree:hover,
+.candleOne:hover, .candleTwo:hover, .candleThree:hover,
+.photoOne:hover, .photoTwo:hover, .photoThree:hover,
+.incenseOne:hover, .incenseTwo:hover, .incenseThree:hover,
+.tripodOne:hover, .tripodTwo:hover, .tripodThree:hover,
+.motionsensorOne:hover, .motionsensorTwo:hover, .motionsensorThree:hover,
+.soundsensorOne:hover, .soundsensorTwo:hover, .soundsensorThree:hover,
+.headgearOne:hover, .headgearTwo:hover, .headgearThree:hover,
+.medicationOne:hover, .medicationTwo:hover, .medicationThree:hover,
+.cameraOne:hover, .cameraTwo:hover, .cameraThree:hover,
+.saltOne:hover, .saltTwo:hover, .saltThree:hover,
+.dotsOne:hover, .dotsTwo:hover, .dotsThree:hover,
+.emfOne:hover, .emfTwo:hover, .emfThree:hover,
+.uvOne:hover, .uvTwo:hover, .uvThree:hover,
+.crucifixOne:hover, .crucifixTwo:hover, .crucifixThree:hover,
+.spiritboxOne:hover, .spiritboxTwo:hover, .spiritboxThree:hover,
+.thermometerOne:hover, .thermometerTwo:hover, .thermometerThree:hover,
+.writingbookOne:hover, .writingbookTwo:hover, .writingbookThree:hover,
+.microphoneOne:hover, .microphoneTwo:hover, .microphoneThree:hover{
+    color: aqua;
+}
+
+.flashLigtCurrent {
+    color: aqua;
+}
+
+.flexEquipment {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexEnd {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.transformation {
+    background-color: #00000060;
+    transform: translateY(-52px);
+}
+
+/* Cartes */
+/* Petite */
+.btnTanglewood {
+    background-image: url('../image/carte/small/tanglewood.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.btnRidgeview{
+    background-image: url('../image/carte/small/ridgeview.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnWillow{
+    background-image: url('../image/carte/small/willow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnEdgefield{
+    background-image: url('../image/carte/small/edgefield.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnBleasdale{
+    background-image: url('../image/carte/small/bleasdale.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnCamp{
+    background-image: url('../image/carte/small/camp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+.btnGrafton{
+    background-image: url('../image/carte/small/grafton.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divWillow,.divRidgeview,.divTanglewood,.divEdgefield, .divBleasdale, .divCamp, .divGrafton {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Moyenne */
+
+.btnMaple{
+    background-image: url('../image/carte/medium/maple.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.btnPrison{
+    background-image: url('../image/carte/medium/prison.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divMaple, .divPrison {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Grande */
+
+.btnBrownstone{
+    background-image: url('../image/carte/large/brownstone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.btnSunny{
+    background-image: url('../image/carte/large/sunny.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divBrownstone, .divSunny {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Objects Maudits */
+
+.btnSinge{
+    background-color: transparent;
+    background-image: url('../image/maudits/singe.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divSinge {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnMusic{
+    background-color: transparent;
+    background-image: url('../image/maudits/music.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px
+}
+
+.divMusic {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnMiroir{
+    background-color: transparent;
+    background-image: url('../image/maudits/miroir.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divMiroir {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnOuija{
+    background-color: transparent;
+    background-image: url('../image/maudits/ouija.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divOuija {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnCircle{
+    background-color: transparent;
+    background-image: url('../image/maudits/circle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divCircle {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnTarot{
+    background-color: transparent;
+    background-image: url('../image/maudits/tarot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divTarot {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnVoodoo{
+    background-color: transparent;
+    background-image: url('../image/maudits/voodoo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divVoodoo {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.btnOs{
+    background-color: transparent;
+    background-image: url('../image/maudits/os.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display:inline-block;
+	text-decoration:none;
+    margin: 14px 14px;
+    border-radius: 17px;
+}
+
+.divOs {
+    width: 250px;
+    height: 250px;
+    margin: 5px 5px 5px 5px;
+}
+
+.blue {
+    color: #0080CD;
+}
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.rebeccapurple {
+    color: rebeccapurple;
+}
+.pink {
+    color:pink;
+}
+.purlple {
+    color: purple;
+}
+.cyan {
+    color: cyan;
+}
+.yellow {
+    color: yellow;
+}
+.white {
+    color: white;
+}
+.yellowclear {
+    color: #fcc844;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .navBar {
+        display: none;
+    }
+    .navBarResp {
+        display: flex;
+        justify-content: center;
+    }
+    .navBarMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .sectionObject,
+    .sectionMap,
+    .sectionGhost,
+    .sectionEvidence {
+        display: none;
+        flex-direction: column;
+    }
+    .titleSection {
+        display: flex;
+        font-family: phasmo;
+        font-size: 50px;
+        text-align: center;
+    }
+    .ghost{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+}

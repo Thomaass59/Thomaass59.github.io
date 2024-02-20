@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="shortcut icon" href="assets/image/phasmo1.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<title>Portfolio</title>
+</head>
+
+<body>
+
+	<div class="footer">
+		<a href="#" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+		<a href="mailto:thomas59.gameur@gmail.com" target="_blank"><i
+				class="fa-solid fa-envelope-open-text fa-2xl"></i></a>
+		<a href="https://github.com/Thomaass59" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+	</div>
+
+	<div class="navbar NavigationLayer" id="myNavbar">
+
+		<h1 class="title" id="title">
+			<span class="txt-rotate" data-period="2000" data-rotate='[ "Thomas." ]'></span>
+		</h1>
+		<a class="btnHome">Accueil</a>
+		<a class="btnPresentation">Présentation</a>
+		<a class="btnCompetence">Compétence</a>
+		<a class="btnRealisation">Réalisation</a>
+		<a class="btnContact">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<hr class="mobilResponvise">
+
+	<section class="sectionHome">
+
+		<h1 class="titleHome">Portfolio - Thomas</h1>
+		<br>
+		<div class="descriptionHome">
+			<p>Développeur WEB Full Stack</p>
+			<br>
+			<p>WEB Mobile Full Stack</p>
+		</div>
+
+	</section>
+
+	<section class="sectionPresentation">
+
+		<div class="profil">
+			<div id="photo"></div>
+			<div id="text">
+				<h3>Bonjour</h3>
+				<p>Je suis Thomas.</p>
+				<p>Développeur WEB & Mobile Full Stack.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="sectionCompetence">
+		<div id="header2">
+			<h1>Mes Compétence</h1>
+			<br><br>
+		</div>
+		<div id="text2">
+			<p>Je suis en mesure d'intervenir sur défférentes programmation</p>
+			<p>Plus précisement :</p>
+			<p>> Concevoir, manipuler et interroger des bases de données</p>
+			<img width="50" height="50" src="assets/ico/mysql.png" alt="MySQL">
+			<p>> Concevoir le back-end et les API sous forme de webservice</p>
+			<img width="50" height="50" src="assets/ico/php.png" alt="PHP">
+			<p>> Concevoir le front-end et optimiser les assets</p>
+			<img width="50" height="50" src="assets/ico/html5.png" alt="HTML5">
+			<img width="50" height="50" src="assets/ico/angular.png" alt="Angular">
+			<img width="50" height="50" src="assets/ico/js.png" alt="JavaScript">
+			<p>> Configurer l'infrastructure matérielle et les serveurs</p>
+			<img width="50" height="50" src="assets/ico/docker.png" alt="Docker">
+			<img width="50" height="50" src="assets/ico/git.png" alt="GIT">
+			<img width="50" height="50" src="assets/ico/debian.png" alt="Debian">
+			<img width="50" height="50" src="assets/ico/figma.png" alt="Figma">
+			<img width="50" height="50" src="assets/ico/windows.png" alt="Windows">
+		</div>
+	</section>
+
+	<section class="sectionRealisation">
+		<div id="header2">
+			<h1>Mes Réalisations</h1>
+			<br><br>
+		</div>
+		<div class="site1 btnProjets">
+			<div id="real1">
+				<div id="real3">
+					<h2>Mes Projets réalisés en formation</h2>
+					<p>La page qui répertorie tous mes projets.</p>
+					<p>Cliquez ici</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sectionProjets">
+		<div class="descriptionProjets">
+			<h1>Mes projets en Formation</h1>
+			<br><br>
+			<div class="flexFlex">
+				<div class="combatAvenger">
+					<h3>Héros Assemblés : La Lutte Finale</h3>
+					<br>
+					<h4>-> Projet Créer un jeu de combat coup par coup en :</h4>
+					<br>
+					<div class="skill">
+						<div>
+							<img width="50" height="50" src="assets/ico/html5.png" alt="HTML5">
+							<p>HTML5 / CSS</p>
+						</div>
+						<div>
+							<img width="50" height="50" src="assets/ico/js.png" alt="JavaScript">
+							<p>JavaScript</p>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="wikiPhobia">
+					<h3>WikiPhobia</h3>
+					<br>
+					<h4>-> Un site web phasmophobia en :</h4>
+					<br>
+					<div class="skill">
+						<div>
+							<img width="50" height="50" src="assets/ico/html5.png" alt="HTML5">
+							<p>HTML5 / CSS</p>
+						</div>
+						<div>
+							<img width="50" height="50" src="assets/ico/js.png" alt="JavaScript">
+							<p>JavaScript</p>
+						</div>
+					</div>
+					<br>
+					<h4>pour mon ECM</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sectionContact BaseLayers" id="PageFive">
+		<div class="container">
+			<h1>Formulaire de contact</h1><br>
+
+			<form id="contact" method="post" action="#"><br>
+				<label for="fname">Prénom</label><br>
+				<input type="text" id="nom" name="nom" placeholder="Votre prénom"><br>
+
+				<label for="sujet">Sujet</label><br>
+				<input type="text" id="objet" name="objet" placeholder="L'objet de votre message"><br>
+
+				<label for="emailAddress">Email</label><br>
+				<input id="emailAddress" type="email" name="email" placeholder="Votre email"><br>
+
+
+				<label for="subject">Message</label><br>
+				<textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea><br>
+
+				<input type="submit" value="Envoyer" value="Envoyer le formulaire !" disabled>
+			</form>
+		</div>
+	</section>
+
+	<script src="assets/scripts/scripts.js"></script>
+
+</html>

@@ -1,0 +1,28 @@
+/* *\********* Font  *********\* */
+
+@font-face {
+    font-family: 'russo_oneregular';
+    src: url('../font/russoone-regular.woff2') format('woff2'),
+        url('../font/russoone-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansthin';
+    src: url('../font/josefinsans-variablefont_wght.woff2') format('woff2'),
+        url('../font/josefinsans-variablefont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('../font/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+        url('../font/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
